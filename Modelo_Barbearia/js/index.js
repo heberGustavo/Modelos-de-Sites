@@ -15,7 +15,7 @@ $(document).on(
     'a[href="#home"], a[href="#precos"], a[href="#sobre"], a[href="#contato"]', function (e) {
 
         var target = $(this).attr("href"); //Get the target
-        var scrollToPosition = $(target).offset().top - 90;
+        var scrollToPosition = $(target).offset().top - 130;
 
         $('html,body').animate({ 'scrollTop': scrollToPosition }, 1000, function () {
 

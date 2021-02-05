@@ -9,7 +9,8 @@
     src: url(../fonts/FugazOne-Regular.ttf);
 }
 
-html {
+html,
+body {
     overflow-x: hidden;
 }
 
@@ -47,6 +48,14 @@ section h2 {
 
 .fundo-nav{
     background: #00000075;
+}
+
+#navbarScroll ul {
+    margin-left: auto;
+}
+
+#mobile{
+    border: 1px solid #fff;
 }
 
 /*** BANNER ***/
@@ -201,3 +210,116 @@ p{
   ::-webkit-scrollbar-thumb:hover {
     background: rgb(156, 156, 156); 
   }
+
+  /*** MEDIA QUERY ***/
+@media (max-width: 575.98px) { 
+
+    #mobile{
+        margin-right: 3%
+    }
+
+    #navbarScroll ul{
+        text-align: end !important;
+        margin-right: 10px !important;
+        padding: 10px 0;
+    }
+
+    #navbarScroll{
+        background: #000;
+    }
+
+    .row{
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    #banner .informacoes{
+        margin-top: 50px;
+        color: black;
+    }
+
+    #banner .informacoes h3{
+        font-size: 20px;
+    }
+
+    #banner .informacoes p{
+        margin-bottom: 20px;
+    }
+
+    .central-mobile{
+        margin-top: 25px;
+    }
+
+    .meu-containerCustom{
+        margin-top: 200px;
+    }
+
+    .meu-containerCustom h5{
+        border-top: 1px solid black;
+        padding-top: 10px;
+    }
+
+    .img-demo{
+        margin-top: 80px;
+    }
+
+    #sessao3 .coluna-item{
+        margin: 10px;
+    }
+    
+    #precos .caixa h3{
+        font-size: 20px;
+    }
+
+    #contato .logo{
+        width: 50%;
+    }
+
+    #contato .borda-direita{
+        border: none;
+        margin: 20px;
+    }
+
+    #contato .borda-esquerda{
+        border: none;
+        margin: 20px 0 0 0;
+    }
+}
+
+@media (min-width: 576px) and (max-width: 767.98px) { 
+    #banner .info-empresa h3{
+        font-size: 26px;
+    }
+    
+    .img-demo{
+        margin-top: 80px;
+    }
+    
+    #sessao3 .coluna-item{
+        margin: 10px;
+    }
+
+    #contato .logo{
+        width: 50%;
+    }
+
+    #contato .borda-direita{
+        border: none;
+        margin: 20px;
+    }
+
+    #contato .borda-esquerda{
+        border: none;
+        margin: 20px 0 0 0;
+    }
+ }
+
+@media (min-width: 768px) and (max-width: 991.98px) { 
+    #sessao3 .card{
+        width: 140%;
+    }
+
+    #sessao3 .container{
+        margin-left: 0 !important;
+    }
+}
